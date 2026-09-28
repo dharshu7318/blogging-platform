@@ -1,0 +1,307 @@
+/* Register Page */
+
+.register-container {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+
+  background-image: url("/blog-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+
+/* Register Card */
+
+.register-box {
+  width: 100%;
+  max-width: 480px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  padding: 35px 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 80, 150, 0.18);
+
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.register-box h1 {
+  text-align: center;
+
+  color: #123b63;
+
+  font-size: 34px;
+
+  margin: 0 0 10px;
+
+  font-weight: 800;
+}
+
+.register-subtitle {
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  margin-bottom: 28px;
+}
+
+/* Form */
+
+.register-box form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+/* Labels */
+
+.register-box label {
+  color: #183b5b;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  margin-top: 8px;
+}
+
+/* Inputs */
+
+.register-box input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #cbdbea;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  color: #1e293b;
+
+  background: #ffffff;
+
+  transition: 0.2s;
+}
+
+.register-box input:focus {
+  border-color: #2196f3;
+
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.12);
+}
+
+/* Password */
+
+.password-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+
+  padding-right: 48px;
+}
+
+.eye-button {
+  position: absolute;
+
+  right: 10px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 19px;
+
+  padding: 5px;
+
+  width: auto;
+
+  color: #475569;
+}
+
+.eye-button:hover {
+  background: transparent;
+
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Password Strength */
+
+.password-strength {
+  margin-top: 6px;
+
+  margin-bottom: 5px;
+}
+
+.strength-bar {
+  height: 5px;
+
+  border-radius: 5px;
+
+  margin-bottom: 6px;
+}
+
+.strength-bar.weak {
+  width: 33%;
+
+  background: #ef4444;
+}
+
+.strength-bar.medium {
+  width: 66%;
+
+  background: #f59e0b;
+}
+
+.strength-bar.strong {
+  width: 100%;
+
+  background: #22c55e;
+}
+
+.password-strength span {
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+/* Password Requirements */
+
+.password-requirements {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin-top: 5px;
+
+  margin-bottom: 15px;
+
+  font-size: 12px;
+
+  color: #94a3b8;
+}
+
+.password-requirements p {
+  margin: 0 0 4px;
+
+  color: #475569;
+
+  font-weight: 700;
+}
+
+.password-requirements .valid {
+  color: #16a34a;
+
+  font-weight: 600;
+}
+
+/* Create Account Button */
+
+.register-button {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #2196f3,
+    #1565c0
+  );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 18px rgba(21, 101, 192, 0.25);
+}
+
+/* Login Link */
+
+.login-link {
+  text-align: center;
+
+  margin-top: 22px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #1976d2;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .register-container {
+    padding: 30px 15px;
+
+    align-items: flex-start;
+  }
+
+  .register-box {
+    padding: 28px 22px;
+
+    margin-top: 20px;
+  }
+
+  .register-box h1 {
+    font-size: 28px;
+  }
+}

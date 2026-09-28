@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #eef6ff;
+  color: #1e293b;
+}
+
+.home {
+  padding: 30px 20px;
+}
+
+.home h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+body {
+  margin: 0;
+  background-image: url("./assets/blog-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

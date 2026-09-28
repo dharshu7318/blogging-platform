@@ -1,0 +1,55 @@
+.create-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.create-box {
+  width: 650px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.create-box h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.create-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.create-box input,
+.create-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.create-box textarea {
+  resize: vertical;
+}
+
+.create-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: lightskyblue;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-box button:hover {
+  opacity: 0.9;
+}
